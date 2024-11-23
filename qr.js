@@ -4,6 +4,6 @@ import { wauthparam } from "https://cdn.jsdelivr.net/gh/whatsauth/js@0.2.1/confi
 wauthparam.auth_ws="d3NzOi8vYXBpLndhLm15LmlkL3dzL3doYXRzYXV0aC9wdWJsaWM=";
 wauthparam.keyword="aHR0cHM6Ly93YS5tZS82MjgzODUyODQxMDMxP3RleHQ9d2g0dDVhdXRoMA==";
 wauthparam.tokencookiehourslifetime=18;
-wauthparam.redirect ="https://logiccoffee.id.biz.id/menu/"
+wauthparam.redirect ="/auth"
 deleteCookie(wauthparam.tokencookiename);
 qrController(wauthparam);
