@@ -24,7 +24,7 @@ import {
   
     try {
       const response = await postJSON(
-        "https://asia-southeast2-awangga.cloudfunctions.net/domyid/auth/login",
+        "https://asia-southeast2-awangga.cloudfunctions.net/logiccoffee/auth/login",
         loginData
       );
       if (response.Status === "OK") {
