@@ -1,96 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login | Logic Coffee</title>
-    <link rel="shortcut icon" href="img/logo logic.png" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css" />
-    <script type="module" src="index.js"></script>
+    <link rel="shortcut icon" href="img/logo logic.png" type="image/x-icon">
+    <link href="style.css" rel="stylesheet">
+	<script src="index.js" type="module"></script>
+	<!-- <script src="gsi.js" type="module"></script> -->
+     
+     <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JPBPLBY1T1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-    <!-- Google fonts signika -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap"
-      rel="stylesheet"
-    />
+    gtag('config', 'G-JPBPLBY1T1');
+  </script>
 
-    <!-- FA Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-  </head>
-  <body>
-    <!-- Form Login -->
-<div class="form-container">
-  <form class="login-form" action="#" method="POST" onsubmit="return loginUser(event)">
-    <!-- Header with logo and "Masuk" -->
-    <div class="brand">
-      <img
-        src="img/logo logic.png"
-        alt="Logo"
-        height="50"
-        class="logo-img"
-      />
-      <span class="text-center">Logic Coffee</span>
-    </div>
-    <link
-      rel="shortcut icon"
-      href="img/logo.png"
-      type="image/x-icon"
-    />
-    <h2 class="text-center login-title">Masuk</h2>
-
-    <!-- Welcome message -->
-    <p class="welcome-text">Selamat datang kembali!</p>
-
-    <!-- Email Input -->
-    <div class="input-group">
-        <input type="text" id="login-email" />
-      <label for="login-email">Email atau Nomor WhatsApp</label>
-    </div>
-
-    <!-- Password Input -->
-    <div class="input-group">
-      <input type="password" id="login-password" />
-      <label for="login-password" style="font-size: 16px">Password</label>
-    </div>
-
-    <!-- Submit Button -->
-    <button type="submit" class="submit-btn" id="login-button">Masuk</button>
-
-    <!-- Cancel Button -->
-    <div class="cancel-btn-container">
-      <a href="https://logiccoffee.id.biz.id/" class="cancel-btn">
-        <i class="fa-solid fa-circle-xmark"></i>
-      </a>
-      <!-- Circle X Mark Icon -->
-    </div>
-
-    <!-- Register Link -->
-    <div class="text-center mt-3">
-      <p class="register-text">
-        Belum punya akun?
-        <a href="https://logiccoffee.id.biz.id/register" class="register-link">Daftar sekarang</a>
-      </p>
-    </div>
-
-    <!-- Separator with "atau" -->
-    <!-- <div class="separator">
-      <hr class="line" />
-      <span class="text">atau</span>
-      <hr class="line" />
-    </div> -->
-
-    <!-- Button for WhatsAuth Login -->
-    <!-- <div class="whatsauth-btn-container">
-      <a href="../whatsauth/index.html" class="whatsauth-btn"
-        >Login Dengan WhatsAuth</a
-      >
-    </div> -->
-  </form>
-</div>
-  </body>
-</html>
+  <!-- Google Search Console -->
+  <meta name="google-site-verification" content="k8YaNO7rK4YG8jashU5g59XhHsmxPtxluUksro5sCEE" />
+</head>
+<body>
+ <div id="hasphonenumber" class="w-full h-screen bg-blue-100 flex items-center justify-center">
+     <div class="w-96 bg-white rounded-xl">
+         <p class="font-bold text-center mb-4" id="useracclog">Tap/Scan dengan <a href="./camwab.jpg" target="_blank">Camera WA</a></p>
+         <div class="flex justify-center mt-2 mb-4" id="whatsauthqr">
+             <img src="loading.svg">
+         </div>
+         <p class="font-bold text-center mb-4" id="whatsauthcounter">counter</p>
+         <p class="font-bold text-center mb-4" id="logs"><a href="https://wa.my.id">WhatsAuth Free WhatsApp Notif, OTP, API Gateway Gratis</a></p>
+     </div>
+ </div>
+</body>
+</html>   
