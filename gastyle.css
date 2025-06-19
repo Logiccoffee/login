@@ -1,0 +1,264 @@
+body {
+    font-family: "Nunito", Arial, sans-serif;
+    background: #c9994c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #805700;
+    margin: 0;
+    padding: 20px;
+}
+
+h1,
+h2,
+h3,
+.judul {
+    /* Untuk judul */
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    /* Adjust the maximum width as needed */
+    margin: 20px;
+    position: relative;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: #09431f;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.brand .logo-img {
+    margin-right: 10px;
+}
+
+.brand .text-center {
+    color: #805700;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 50px;
+    font-family: 'Signika', sans-serif;
+}
+
+.login-title {
+    font-family: 'Signika', sans-serif;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.welcome-text {
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.form-control {
+    width: 100%;
+    /* Adjust this value as needed */
+    padding: 10px;
+    /* Adjust padding as needed */
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+    display: flex;
+    /* Use flexbox for better alignment */
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #c9994c;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: transparent;
+    outline: none;
+    transition: all 0.3s ease;
+    color: #805700;
+}
+
+label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    background-color: #fff;
+
+    transition: all 0.3s ease;
+    pointer-events: none;
+    color: #805700;
+    font-size: 16px;
+}
+
+input:focus {
+    border-color: #805700;
+}
+
+input:focus+label,
+input:valid+label {
+    top: 0;
+    font-size: 16px;
+    color: #c9994c;
+}
+
+.submit-btn {
+    width: 100%;
+    /* Keep submit button at 100% width */
+    padding: 10px;
+    background-color: #09431f;
+    color: #E9E3D5;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #1b5c36;
+    color: white;
+}
+
+.cancel-btn-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.cancel-btn {
+    font-size: 24px;
+    color: #c9994c;
+    text-decoration: none;
+}
+
+.cancel-btn:hover {
+    color: #c9994c;
+}
+
+/* Separator styling */
+.separator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    font-family: 'Signika', sans-serif;
+}
+
+.separator .line {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    /* Warna garis */
+    flex: 1;
+    margin: 0 10px;
+}
+
+.separator .text {
+    color: #888;
+    /* Warna teks "atau" */
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* WhatsAuth Button */
+.whatsauth-btn-container {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.whatsauth-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #4caf50;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Signika', sans-serif;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+.whatsauth-btn:hover {
+    background-color: #388e3c;
+}
+
+.register-text {
+    margin-top: 10px;
+    font-weight: normal;
+}
+
+.register-link {
+    font-weight: bold;
+    color: #c9994c;
+    text-decoration: none;
+}
+
+.register-link:hover {
+    color: #a57b32;
+}
+
+/* Responsiveness */
+
+@media (max-width: 600px) {
+    .input-group {
+        flex-direction: column;
+        /* Stack elements vertically */
+    }
+
+    .input-group-sejajar {
+        flex-direction: column;
+        /* Stack elements vertically */
+    }
+
+    .separator {
+        flex-direction: column;
+        margin: 15px 0;
+    }
+
+    .separator .line {
+        width: 100%;
+        /* Garis penuh di mobile */
+        margin: 5px 0;
+    }
+
+    .separator .text {
+        font-size: 12px;
+    }
+
+    .whatsauth-btn {
+        font-size: 14px;
+        padding: 8px 15px;
+        width: 100%;
+        /* Tombol penuh untuk perangkat kecil */
+    }
+}
+
+@media (max-width: 480px) {
+    .separator .text {
+        font-size: 11px;
+    }
+
+    .whatsauth-btn {
+        font-size: 13px;
+        padding: 7px 10px;
+    } }
